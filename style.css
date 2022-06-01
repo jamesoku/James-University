@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+*{
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+ th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+    
+  
+  }
+
+.centered {
+    position: absolute;
+    top: 5.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    color: plum;
+    font-size: 2vw;
+    
+  }
+
+.video-box{
+    display: grid;
+    grid-column: 1/span 2;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  video{
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 55px;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+  }
+
+  .logo-box img {
+    float: left;
+    height: 120px;
+  }
+
+  nav a:hover {
+    background-color: #5DB7DE;
+    
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    margin: 0;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 100%;
+    background-color: antiquewhite;
+  }
+
+  
+  .table1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .side{
+    grid-column: 2;
+    grid-row: 2/3;
+  }
+  table{
+    width: 100%;
+    background-color: antiquewhite;
+    padding-top: 1%;
+    border-radius: 10px;
+  }
+  td,th{
+    text-align: center;
+    background-color: aqua;
+  
+
+  }
+  th{
+    font-weight: bolder;
+  }
+  .container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    border: 2px solid #716A5C;
+    border-radius: 0.5rem;
+  }
+  
+  .block1{
+    border: 2px solid #26607F;
+			border-radius: 0.5rem;
+			background-color: aqua;
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 1rem;
+			padding: 1rem;
+  }
+  .block2{
+    border: 2px solid #26607F;
+			border-radius: 0.5rem;
+			background-color: aqua;
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 1rem;
+			padding: 1rem;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-gap: 2vh;
+  }
+
+  
+
+  .container_academics{
+    display: grid;
+    grid-template-columns: 1vw 35% 15% 35% 1vw;
+    grid-template-rows: 13vh 30vh 10vh 10vh 13vh 40vh 10vh;
+    
+  }
+  
+
+  .acadtable{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 43vw;
+    z-index: 1;
+
+  }
+  .border1{
+    grid-column: 3/5;
+    border: 2px solid #26607F;
+    
+    border-radius: 0.5rem;
+    margin-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 2vw;
+    width: 100%;
+    grid-row: 1/4;
+    background-color: antiquewhite;
+    height: 100%;
+    
+  }
+
+  .border2{
+    grid-column: 2/3;
+    border-radius: 0.5rem;
+    grid-row: 5/8;
+    border: 2px solid #26607F;
+    padding-left: 2vw;
+    padding-bottom: 0.5vh;
+    padding-right: 20vw;
+    width: 100%;
+    background-color: antiquewhite;
+    height: auto;
+    
+  }
+  .unipic{
+    width: 98%;
+    height: 100%;
+    border-radius: 0.5rem;
+    grid-column: 4/7;
+    grid-row: 6/7;
+  }
+
+  #container{
+    display: flex;   
+    flex-direction: column;
+    word-wrap: break-word;
+    border-radius: 1em;
+    margin-top: 2em;
+    background-color: white;
+    margin-left: 3vmin;
+    margin-right: 3vmin; 
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 40px;
+    background-color: antiquewhite;
+   
+}
+
+#container img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  width: 100%;
+    max-width: 400px;
+    height: auto;
+
+}
+
+
+  
+
+  @media only screen and (max-width: 600px) 
+  {
+    .content{
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer{
+      display: flex;
+      justify-content: center;
+      height: 55px;
+      text-align: center;
+    }
+
+    .container_academics{
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      
+    }
+    .border1,.border2,.acadtable,.unipic{
+      width: 100%;
+      height: auto;
+      padding: 0;
+
+    }
+    
+    h2,.start{
+      text-align: center;
+  }
+    
+  }
