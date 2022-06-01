@@ -2,7 +2,7 @@
 # Overview
 
 This is a basic website i created for the purpose of showing my HTML5 and CSS Skills. 
-In the website implemented the use of Grid, Flexbox and media queries.
+In the website, I implemented the use of Grid, Flexbox and media queries.
 
 # Development Environment
 
